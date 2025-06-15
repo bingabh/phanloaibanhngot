@@ -22,17 +22,6 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Danh sách nhãn và cấu hình
 class_names = ['donut', 'su kem', 'sừng bò', 'tart trứng']
-<<<<<<< HEAD
-=======
-
-# Load model
-def load_mobilenet_model():
-    return load_model('MobileNet_RGB-2506.h5')
-
-model = load_mobilenet_model()
-
-# Cấu hình đầu vào ảnh
->>>>>>> a0e44df (update)
 IMG_SIZE = (150, 150)
 
 # Khởi tạo session state
