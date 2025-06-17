@@ -35,6 +35,7 @@ def get_csv_download_link(df):
     href = f'<a href="data:file/csv;base64,{b64}" download="ket_qua_du_doan.csv" class="download-button">📥 Tải kết quả về máy</a>'
     return href
 
+# Hàm tạo và tải model
 @st.cache_resource
 def create_and_load_model():
     try:
@@ -60,7 +61,7 @@ def create_and_load_model():
     except Exception as e:
         st.error(f"❌ Lỗi khi tạo model: {str(e)}")
         st.stop()
-
+# Hàm tiền xử lý ảnh
 def preprocess_image(img):
     img = img.resize(IMG_SIZE)
     img_array = image.img_to_array(img)
